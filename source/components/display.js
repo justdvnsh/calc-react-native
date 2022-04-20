@@ -6,7 +6,7 @@ export default class Display extends Component {
     render() {
         return(
             <View style={styles.displayContainer}>
-                <Text>Hi I am a text inside display</Text>
+                <Text style={styles.displayText}>Hi I am a text inside display</Text>
             </View>
         );
     }
