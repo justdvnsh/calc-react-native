@@ -27,8 +27,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import styles from './source/styles/styles';
-import Display from './source/components/display';
-import ButtonItems from './source/components/buttonItems';
+import Display from './source/components/header/display';
+import ButtonContainer from './source/components/footer/buttonItems';
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,7 +40,7 @@ const App: () => Node = () => {
   return (
     <View style={styles.mainContainer}>
       <Display />
-      <ButtonItems />
+      <ButtonContainer />
     </View>
   );
 };
